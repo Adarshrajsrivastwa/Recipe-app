@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F4F1BB;
+}
+
+nav{
+    background-color:#9BC1BC;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo{
+    font-size: 4vh;
+    margin-left: 5vw;
+}
+
+.search_option{
+    background-color:#E6EBE0;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 50vw;
+    height: 5vh;
+    font-size: 3vh;
+}
+
+.search_icon{
+    height: 5vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vw;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.detail{
+    height: 80vh;
+    width:28vw;
+    align-items: center;
+    background-color: aliceblue;
+    z-index: 9;
+}
+
+.photo{
+    height: 40vh;
+    width: 100%;
+}
+
+.name{
+    font-size: 4vh;
+    text-align: center;
+    color: black;
+    margin-top: 2vh;
+}
+
+.area{
+    font-size: 2.5vh;
+    text-align: center;
+    color: rgb(26, 25, 25);
+    margin-top: 1.5vh;
+}
+
+.btn{
+    height: 5vh;
+    width:20vw;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    background-color: rgb(254, 8, 8);
+    font-size: 4vh;
+    color: black;
+}
+
+.whole_detail{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background-color:#5D576B;
+    display: none;
+    z-index: 9;
+    height: 50vh;
+    width:50vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cancel{
+    position:absolute;
+    top:2%;
+    right: 2%;
+    height: 3vh;
+    width: 2vw;
+    border-radius: 3vh;
+    position: absolute;
+}
+
+.ingredients,.instruction{
+    width:42vw;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.heading{
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px){
+
+    .name{
+        font-size: 1.5vh;
+        text-align: center;
+        color: black;
+        margin-top: 3vh;
+    }
+
+    .area{
+        font-size: 1vh;
+        text-align: center;
+        color: rgb(26, 25, 25);
+        margin-top: 2vh;
+    }
+
+    .btn{
+        height: 5vh;
+        width:28vw;
+        margin-left:5vw;
+        margin-top: 2vh;
+        background-color: rgb(254, 8, 8);
+        font-size: 2vh;
+        color: black;
+    }
+
+    .detail{
+        height: 50vh;
+        width:40vw;
+        align-items: center;
+        background-color: aliceblue;
+        z-index: 9;
+        overflow-x: hidden;
+    }
+    .photo{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 3vh;
+        margin-left: 5vw;
+        align-items: center;
+    }
+
+    .search_option{
+        margin-right: 5vw;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5.5vh;
+        background-color:#E6EBE0;
+    }
+    
+    .search{
+        width: 50vw;
+        height: 6vh;
+        font-size: 3vh;
+    }
+    
+    .icon{
+        height: 4.5vh;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+
+    .name{
+        font-size: 1.5vh;
+        text-align: center;
+        color: black;
+        margin-top: 3vh;
+    }
+
+    .area{
+        font-size: 1vh;
+        text-align: center;
+        color: rgb(26, 25, 25);
+        margin-top: 2vh;
+    }
+
+    .btn{
+        height: 5vh;
+        width:34vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        background-color: rgb(254, 8, 8);
+        font-size: 2vh;
+        color: black;
+    }
+
+    .detail{
+        height: 40vh;
+        width:40vw;
+        align-items: center;
+        background-color: aliceblue;
+        z-index: 9;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        font-size: 3vh;
+        margin-left: 5vw;
+        align-items: center;
+    }
+
+    .search_option{
+        margin-right: 5vw;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5.5vh;
+        background-color:#E6EBE0;
+    }
+    
+    .search{
+        width: 50vw;
+        height: 6vh;
+        font-size: 3vh;
+    }
+    
+    .icon{
+        height: 4.5vh;
+    }
+
+    .photo{
+        height: 20vh;
+        width: 100%;
+    }
+}
